@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="frontend/public/darklens-logo.png" alt="DarkLens Logo" width="150" />
+</p>
+
 # DarkLens OSINT Platform
 
 DarkLens is an enterprise-grade, high-fidelity threat intelligence and reconnaissance platform. It allows security researchers to maintain persistent, authenticated access to dark web forums, surface intelligence sources, and Telegram channels without the friction of repeated logins.
