@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo -e "\e[34m[DarkLens]\e[0m Fetching latest updates from repository..."
+git pull || echo -e "\e[33m[DarkLens]\e[0m Could not fetch updates. Starting anyway..."
+
 echo -e "\e[34m[DarkLens]\e[0m Booting Command Center..."
 
 # Function to handle cleanup on exit
