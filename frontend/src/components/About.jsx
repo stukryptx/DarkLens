@@ -36,7 +36,7 @@ const About = () => {
         <div>
           <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 8px 0' }}>Threat Research Tool</h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.6, maxWidth: '600px', margin: '0 auto' }}>
-            DarkLens is an advanced OSINT and threat intelligence platform designed to securely monitor forums, launch authenticated sessions, and extract actionable intel from the dark web and surface web.
+            DarkLens is an advanced session management and threat intelligence platform designed to securely monitor forums, launch authenticated sessions, and extract actionable intel from the dark web and surface web.
           </p>
         </div>
 

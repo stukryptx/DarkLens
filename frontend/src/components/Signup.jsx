@@ -46,7 +46,7 @@ const Signup = () => {
             Secure Operator Registration.
           </h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-            Request access to the DarkLens OSINT grid. Centralize your reconnaissance, maintain persistent access, and map threat infrastructures natively.
+            Request access to the DarkLens session grid. Centralize your reconnaissance, maintain persistent access, and map threat infrastructures natively.
           </p>
         </div>
       </div>

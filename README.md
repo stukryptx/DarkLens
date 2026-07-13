@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend/public/darklens-banner.png" alt="DarkLens OSINT Hub" width="100%" />
+  <img src="frontend/public/darklens-banner.png" alt="DarkLens Session Manager" width="100%" />
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 ## 📖 Overview
 
-**DarkLens** is a centralized intelligence hub designed for security researchers and OSINT analysts. It solves the friction of managing dozens of isolated sock-puppet accounts across various threat actor forums, Telegram channels, and dark web portals. 
+**DarkLens** is a centralized session management and monitoring hub designed for security researchers and threat analysts. It solves the friction of managing dozens of isolated sock-puppet accounts across various threat actor forums, Telegram channels, and dark web portals. 
 
 By maintaining persistent, authenticated access via injected session cookies and local storage directly into a sandboxed Chromium instance, DarkLens enables instant, seamless access to gated intelligence sources without the need for repeated logins.
 
@@ -97,4 +97,4 @@ Ensure you have the following installed on your system before proceeding:
 
 > [!WARNING]
 > **Strictly for Authorized Research**
-> DarkLens is built exclusively for authorized security research, Open Source Intelligence (OSINT) gathering, and threat intelligence analysis by cybersecurity professionals. Any usage for malicious purposes, unauthorized access, or illegal activities is strictly prohibited. The developers assume no liability for misuse.
+> DarkLens is built exclusively for authorized security research, continuous monitoring, and threat intelligence analysis by cybersecurity professionals. Any usage for malicious purposes, unauthorized access, or illegal activities is strictly prohibited. The developers assume no liability for misuse.
