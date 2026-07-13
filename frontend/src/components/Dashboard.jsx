@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../api';
 import { useNavigate } from 'react-router-dom';
-import { Activity, ShieldAlert, Users, FileText, Zap, GlobeLock, Play, MessageCircle, Clock, ExternalLink } from 'lucide-react';
+import { Activity, ShieldAlert, Users, FileText, Zap, GlobeLock, Play, MessageCircle, Clock, ExternalLink, LayoutDashboard } from 'lucide-react';
 
 const Dashboard = () => {
   const [data, setData] = useState({
@@ -49,6 +49,17 @@ const Dashboard = () => {
   return (
     <div style={{ paddingBottom: '40px' }}>
       
+      <div className="header-actions">
+        <div>
+          <h2 style={{ fontSize: '1.75rem', color: 'var(--text-primary)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <LayoutDashboard size={28} color="var(--accent-color)" /> Command Center
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
+            Global session telemetry, quick launch targets, and recent artifacts.
+          </p>
+        </div>
+      </div>
+
       {/* Top Status Pulse Row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '32px' }}>
         

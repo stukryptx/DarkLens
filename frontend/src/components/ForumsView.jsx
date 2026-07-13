@@ -269,7 +269,9 @@ const ForumsView = () => {
 
       <div className="header-actions">
         <div>
-          <h2 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', fontWeight: 700 }}>Target Forums</h2>
+          <h2 style={{ fontSize: '1.75rem', color: 'var(--text-primary)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Globe size={28} color="var(--accent-color)" /> Target Hub
+          </h2>
           <p style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
             {forums.length} forum{forums.length !== 1 ? 's' : ''} monitored
           </p>

@@ -99,13 +99,15 @@ const TelegramModule = () => {
 
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', paddingBottom: '40px' }}>
-      <div style={{ marginBottom: '24px' }}>
-        <h2 style={{ fontSize: '1.8rem', color: 'var(--text-primary)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <MessageCircle size={28} color="#38bdf8" /> Telegram Integration (MTProto)
-        </h2>
-        <p style={{ color: 'var(--text-secondary)', marginTop: '8px' }}>
-          Authenticate a global Telegram account using the MTProto protocol. Once connected, ThreatWire will be able to join private channels, read messages, and scrape intelligence natively.
-        </p>
+      <div className="header-actions">
+        <div>
+          <h2 style={{ fontSize: '1.75rem', color: 'var(--text-primary)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <MessageCircle size={28} color="var(--accent-color)" /> Telegram Integration
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
+            Authenticate a global Telegram account using the MTProto protocol. Once connected, ThreatWire will be able to join private channels, read messages, and scrape intelligence natively.
+          </p>
+        </div>
       </div>
 
       {error && (

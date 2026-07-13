@@ -184,8 +184,8 @@ const Launcher = () => {
 
       <div className="header-actions">
         <div>
-          <h2 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Play size={24} color="var(--accent-color)" /> Node Orchestrator
+          <h2 style={{ fontSize: '1.75rem', color: 'var(--text-primary)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Play size={28} color="var(--accent-color)" /> Node Orchestrator
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
             Select a target node below to initialize a secure proxy session.
