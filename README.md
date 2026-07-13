@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend/public/darklens-logo.png" alt="DarkLens Logo" width="150" />
+  <img src="frontend/public/darklens-banner.png" alt="DarkLens OSINT Hub" width="100%" />
 </p>
 
 # DarkLens OSINT Platform
