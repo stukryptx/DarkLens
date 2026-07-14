@@ -1,0 +1,22 @@
+[0;1;32m●[0m pm2-stukryptx.service - PM2 process manager
+     Loaded: loaded (]8;;file://StuKrypt/etc/systemd/system/pm2-stukryptx.service\/etc/systemd/system/pm2-stukryptx.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Mon 2026-07-13 11:32:18 BST; 18h ago
+ Invocation: 38bf4321b1024b2ea2194009c8fd0776
+       Docs: ]8;;https://pm2.keymetrics.io/\https://pm2.keymetrics.io/]8;;\
+   Main PID: 1816 (PM2 v7.0.1: God)
+      Tasks: 11[0;38:5:245m (limit: 18532)[0m
+     Memory: 57.1M (peak: 421.6M, swap: 12.8M, swap peak: 15.1M)
+        CPU: 30.245s
+     CGroup: /system.slice/pm2-stukryptx.service
+             └─[0;38:5:245m1816 "PM2 v7.0.1: God Daemon (/home/stukryptx/.pm2)"[0m
+
+Jul 13 11:32:18 StuKrypt pm2[1466]: [PM2] Spawning PM2 daemon with pm2_home=/home/stukryptx/.pm2
+Jul 13 11:32:18 StuKrypt pm2[1466]: [PM2] PM2 Successfully daemonized
+Jul 13 11:32:18 StuKrypt pm2[1466]: [PM2] Resurrecting
+Jul 13 11:32:18 StuKrypt pm2[1466]: [PM2] Restoring processes located in /home/stukryptx/.pm2/dump.pm2
+Jul 13 11:32:18 StuKrypt pm2[1466]: [PM2] Process /home/stukryptx/Codebase/ThreatWire-DarkWeb-Forums/backend/server.js restored
+Jul 13 11:32:18 StuKrypt pm2[1466]: ┌────┬─────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+Jul 13 11:32:18 StuKrypt pm2[1466]: │ id │ name            │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+Jul 13 11:32:18 StuKrypt pm2[1466]: ├────┼─────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+Jul 13 11:32:18 StuKrypt pm2[1466]: │ 0  │ mybb-backend    │ default     │ 1.0.0   │ fork    │ 1876     │ 0s     │ 0    │ online    │ 0%       │ 29.4mb   │ stu… │ disabled │
+Jul 13 11:32:18 StuKrypt pm2[1466]: └────┴─────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘

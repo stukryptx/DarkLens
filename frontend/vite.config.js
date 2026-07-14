@@ -10,6 +10,8 @@ export default defineConfig(({ mode }) => {
     envDir: '../',
     server: {
       port: env.VITE_FRONTEND_PORT ? parseInt(env.VITE_FRONTEND_PORT) : 5173,
+      allowedHosts: ['darklens.local', 'localhost'],
+      host: true // Expose to the network so darklens.local resolves properly
     }
   }
 })
