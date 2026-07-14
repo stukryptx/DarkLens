@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Source user profile to ensure Node/NPM are in PATH when run as a background daemon
+if [ -f "$HOME/.bashrc" ]; then
+    source "$HOME/.bashrc"
+fi
+if [ -f "$HOME/.nvm/nvm.sh" ]; then
+    source "$HOME/.nvm/nvm.sh"
+fi
+
 echo -e "\e[34m[DarkLens]\e[0m Fetching latest updates from repository..."
 git pull || echo -e "\e[33m[DarkLens]\e[0m Could not fetch updates. Starting anyway..."
 
