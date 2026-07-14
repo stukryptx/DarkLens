@@ -44,6 +44,9 @@ Type=simple
 User=$CURRENT_USER
 WorkingDirectory=$CURRENT_DIR
 Environment=PATH=$NODE_DIR:/usr/local/bin:/usr/bin:/bin:/home/$CURRENT_USER/.nvm/versions/node/$(node -v 2>/dev/null || echo "none")/bin:$PATH
+Environment=DISPLAY=$DISPLAY
+Environment=WAYLAND_DISPLAY=$WAYLAND_DISPLAY
+Environment=XAUTHORITY=$XAUTHORITY
 ExecStart=$CURRENT_DIR/start.sh
 Restart=on-failure
 RestartSec=10
