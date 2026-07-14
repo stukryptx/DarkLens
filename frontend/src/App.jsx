@@ -10,13 +10,21 @@ import NotesView from './components/NotesView';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import About from './components/About';
+import Landing from './components/Landing';
 import { AuthProvider, AuthContext } from './context/AuthContext';
 import { LogOut, Menu } from 'lucide-react';
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
   if (loading) return <div style={{display: 'flex', height: '100vh', justifyContent: 'center', alignItems: 'center'}}>Loading...</div>;
-  if (!user) return <Navigate to="/login" />;
+  if (!user) return <Navigate to="/welcome" />;
+  return children;
+};
+
+const PublicRoute = ({ children }) => {
+  const { user, loading } = useContext(AuthContext);
+  if (loading) return <div style={{display: 'flex', height: '100vh', justifyContent: 'center', alignItems: 'center'}}>Loading...</div>;
+  if (user) return <Navigate to="/" />;
   return children;
 };
 
@@ -49,8 +57,9 @@ function App() {
     <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/welcome" element={<PublicRoute><Landing /></PublicRoute>} />
+          <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
+          <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
           <Route path="/*" element={<ProtectedRoute><AppLayout /></ProtectedRoute>} />
         </Routes>
       </Router>
