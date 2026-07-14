@@ -70,15 +70,21 @@ Ensure you have the following installed on your system before proceeding:
    cp .env.example .env
    ```
 
-3. **Install Dependencies & Launch:**
+3. **Install Dependencies & Launch (Foreground):**
    We have provided a unified startup script that will automatically install all NPM dependencies for both the frontend and backend, and start the development servers concurrently.
    ```bash
    chmod +x start.sh
    ./start.sh
    ```
+   *Access the Command Center at: `http://localhost:5173`*
 
-4. **Access the Dashboard:**
-   Navigate your browser to `http://localhost:5173` to access the Command Center.
+4. **Background Daemon Installation (Recommended):**
+   DarkLens includes a cross-platform installer that maps a custom local domain and configures the platform as an OS-level background service (Systemd on Linux, Launchd on macOS). 
+   ```bash
+   chmod +x install.sh
+   ./install.sh
+   ```
+   *Once installed, DarkLens runs automatically on boot. Access the Command Center at: `http://darklens.local:5173`*
 
 ---
 
